@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Survey</title>
+
+  
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class=" header">
+       <a href="#" class="logo">__ Surveys</a>
+       
+     
+       <nav class="navbar">
+        <a href="#home" class="active">Fill out Survey</a>
+        <a href="#about">Survey Results </a>
+   
+        </nav>
+    </header>
+ 
+        <!---fill out section-->
+        
+        <h2>Personal Details</h2>
+        <div class="home" id="home">
+            
+         <form action="process_form.php" method="post">
+            
+             <div class="form-group">
+                 <label for="full_name">Full Name:</label>
+                 <input type="text" id="full_name" name="full_name" required>
+             </div>
+             <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="5" max="120" required>
+            </div>
+            
+             <div class="form-group">
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" required>
+             </div>
+             <div class="form-group">
+                 <label for="dob">Date of Birth:</label>
+                 <input type="date" id="dob" name="dob" required>
+             </div>
+             <div class="form-group">
+                 <label for="contact_number">Contact Number:</label>
+                 <input type="tel" id="contact_number" name="contact_number" pattern="[0-9]{10}" required>
+             </div>
+            
+
+     </div>
+        
+       
+        <div class="food-container" id="food-container" >
+            <br><label>What is your Favorite Food?:</label >
+            <input type="checkbox" id="pizza" name="favoriteFood" value="Pizza" required>
+            <label for="pizza">Pizza</label>
+
+            <input type="checkbox" id="Pasta" name="favoriteFood" value="Pasta" >
+            <label for="pizza">Pasta</label>
+            <input type="checkbox" id="Pap" name="favoriteFood" value="Pap" >
+         <label for="pizza">Pap and Wors</label>
+
+            <input type="checkbox" id="other" name="favoriteFood" value="Other" >
+            <label for="pizza">Other</label><br>
+        </div>
+        
+        <!--table section-->
+        <br><label>Please rate your level of agreement on a scale of 1 to 5 1 being "Stongly Agree" and 5 being "Strongly Disagree."</label ><br>
+         
+       <br> <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Strongly Agree</th>
+                    <th>Agree</th>
+                    <th>Neutral</th>
+                    <th>Disagree</th>
+                    <th>Strongly Disagree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="q1" value="strongly_agree" required></td>
+                    <td><input type="radio" name="q1" value="agree"></td>
+                    <td><input type="radio" name="q1" value="neutral"></td>
+                    <td><input type="radio" name="q1" value="disagree"></td>
+                    <td><input type="radio" name="q1" value="strongly_disagree"></td>
+                </tr>
+                <tr>
+                    <td>I like to watch movies</td>
+                    <td><input type="radio" name="q2" value="strongly_agree "required></td>
+                    <td><input type="radio" name="q2" value="agree"></td>
+                    <td><input type="radio" name="q2" value="neutral"></td>
+                    <td><input type="radio" name="q2" value="disagree"></td>
+                    <td><input type="radio" name="q2" value="strongly_disagree"></td>
+                </tr>
+                <tr>
+                    <td>I like to listen to radio</td>
+                    <td><input type="radio" name="q3" value="strongly_agree" required></td>
+                    <td><input type="radio" name="q3" value="agree"></td>
+                    <td><input type="radio" name="q3" value="neutral"></td>
+                    <td><input type="radio" name="q3" value="disagree"></td>
+                    <td><input type="radio" name="q3" value="strongly_disagree"></td>
+                </tr>
+                <tr>
+                    <td>I like to eat out</td>
+                    <td><input type="radio" name="q4" value="strongly_agree" required></td>
+                    <td><input type="radio" name="q4" value="agree"></td>
+                    <td><input type="radio" name="q4" value="neutral"></td>
+                    <td><input type="radio" name="q4" value="disagree"></td>
+                    <td><input type="radio" name="q4" value="strongly_disagree"></td>
+                </tr>
+                <tr>
+                    <td>I like to watch TV</td>
+                    <td><input type="radio" name="q5" value="strongly_agree" required></td>
+                    <td><input type="radio" name="q5" value="agree"></td>
+                    <td><input type="radio" name="q5" value="neutral"></td>
+                    <td><input type="radio" name="q5" value="disagree"></td>
+                    <td><input type="radio" name="q5" value="strongly_disagree"></td>
+                </tr>
+             </tbody>
+              
+                </table>
+                <br><div class="form-group">
+                    <input type="submit" value="Submit">
+                        </div>
+            </form>
+        
+        
+        
+     
+    
+    
+       
+   
+        <section class="about" id="about">
+           <label for="">Total number of surveys completed</label> 
+            <label for="">Average age</label>
+            <label for="">Oldest person that participated </label>
+            <label for="">Percentage of people who like Pizza</label>
+            <label for="">People like to eat out</label>
+
+
+
+        </section>
+     <script src="java.js"></script>
+    </body>
+
+</html>

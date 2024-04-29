@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior:smooth ;
+    font-family: 'poppins', sans-serif;
+   
+}
+
+html{
+ font-size: 62.5%;
+ overflow: hidden;
+
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9%;
+
+}
+.header{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   
+}
+.logo{
+    font-size: 2.5rem;
+    color: cornflowerblue;
+    font-weight: 600;
+    cursor: default;
+  
+}
+.navbar{
+    font-size: 1.7rem;
+    color: cornflowerblue;
+    margin-left: 4rem;
+    transition: .3s;
+    padding-right: 20px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: cornflowerblue;
+  
+}
+
+h2{
+    margin-top: 65px;
+}
+.home {
+    margin-left: 200px;
+    margin: 50px auto;
+    padding: 30px;
+   
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.form-group {
+    margin-top: 10px;
+ 
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input {
+    width: 30%;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    
+}
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.home form {
+    position: absolute;
+    margin-top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.home input{
+    margin-top: 5px;
+     
+    
+}
+.home label{
+    margin-top: 5px;
+
+}
+.food-container label{
+    margin-top: 150px;
+    
+
+}
+.food-container input{
+    margin-top: 150px;
+    
+
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    
+}
+th{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid blue;
+}
+th {
+    margin-top: 50px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+td input[type="radio"] {
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
